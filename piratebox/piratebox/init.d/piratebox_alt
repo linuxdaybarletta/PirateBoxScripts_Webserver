@@ -84,7 +84,7 @@ case "$1" in
        iw $PHY_IF interface add $INTERFACE type managed
     fi
 
-    if [ "$PROBE_INTERFACE" = yes ] ; then
+    if [ "$PROBE_INTERFACE" = "yes" ] ; then
       echo "  Probe wlan"
       #Setting up WLAN Interface
       piratebox_setup_wlan.sh  $CONF probe

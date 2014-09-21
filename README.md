@@ -1,11 +1,11 @@
-# PirateBoxScripts with Modifications for running in a Webserver     
+# PirateBoxScripts with Modifications for running in a Webserver
 &copy; 2013 [Matthias Strubel](mailto:matthias.strubel@aod-rpg.de) licenced under GPL-3
 
 ## Maintainers
-* [Matthias Strubel](matthias.strubel@aod-rpg.de)     
+* [Matthias Strubel](matthias.strubel@aod-rpg.de)
 * [Cale Black](cablack@rams.colostate.edu)
 
-Sources for Running PirateBox with Webserver lighttpd     
+Sources for Running PirateBox with Webserver lighttpd
 Contains: Shoutbox, Forum
 
 PirateBox is a collection of scripts / programs that allows you to use your wireless card
@@ -31,10 +31,10 @@ PirateBox scripts can:
 * Optional imageboard
 * Optional Station counter
 * Optional Inihibit starting upload-script
-* Optional Timesave script (for devices without RTC)  - can be found in piratebox/bin/timesave.sh 
+* Optional Timesave script (for devices without RTC)  - can be found in piratebox/bin/timesave.sh
 * Optional Poll for WLAN device until it available (for USB wifi cards)
 
-More information can be found on: http://piratebox.aod-rpg.de     
+More information can be found on: http://piratebox.aod-rpg.de
 Installation-HowTo and current Download-Link: http://piratebox.aod-rpg.de/dokuwiki/doku.php/piratebox_lighttpd
 
 Is supported by [mkPirateBox > v0.5 for OpenWRT Systems](https://github.com/MaStr/mkPirateBox)
@@ -55,3 +55,9 @@ Run the installer in the unzipped folder:
     cd PirateBoxScripts_Webserver/piratebox
     sudo ./install.sh default
     #Default can be substituted with 'board' if you want an image board on your PirateBox
+
+### Image board security configuration
+Run (as root) the script `board-autoconf.sh` to change the admin password and the random secret code in the `config.pl` file.
+
+### Edimax Nano USB EW-7811Un
+If you're using this wifi card, run (as root) the script `edimax_ew-7811un_setup.sh`.

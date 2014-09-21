@@ -76,7 +76,7 @@ if [ $2 =  "start" ] ; then
 elif [ $2 = "stop" ] ; then
   echo "Stopping wifi interface $INTERFACE "
   ifconfig $INTERFACE down
-elif [ $ = "probe" ] ; then 
+elif [ $2 = "probe" ] ; then 
    # simply check if the interface is available
    probe
 fi
